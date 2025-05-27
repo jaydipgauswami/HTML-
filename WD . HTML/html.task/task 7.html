@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif                                                                                                                                                        ;
+      background-color: #cceae7;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .checkboxes, .radios {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Survey Form</h1>
+    <p>Let us know how we can improve freeCodeCamp</p>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age">
+
+      <label>Which option best describes your current role?</label>
+      <select>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Other</option>
+      </select>
+
+      <label>How likely is it that you would recommend freeCodeCamp?</label>
+      <div class="radios">
+        <label><input type="radio" name="recommend"> Definitely</label>
+        <label><input type="radio" name="recommend"> Maybe</label>
+        <label><input type="radio" name="recommend"> Not sure</label>
+      </div>
+
+      <label>What do you like most in FCC?</label>
+      <select>
+        <option>Select an option</option>
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Community</option>
+      </select>
+
+      <label>Things that should be improved (Check all that apply):</label>
+      <div class="checkboxes">
+        <label><input type="checkbox"> Front-end Projects</label>
+        <label><input type="checkbox"> Back-end Projects</label>
+        <label><input type="checkbox"> Data Visualization</label>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

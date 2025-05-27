@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="form.css">
+</head>
+<body>
+         <div class="container">
+
+    <h1 align="center">Pete's Pizza Delivery </h1>
+    <h2 align="center">Online Oeder Form</h2>
+<form method="post" action="">
+    <table>
+       <div class="content">  <img src="https://restaurants.pizzahut.co.in/images/PizzaHutHomePage3.png" alt=""></div>
+        <tr><td>
+            <label for="Name">*Name</label> </td>
+           <td> <input type="*text"></td> 
+       <td> <label for="*Tel">*Tel</label></td>
+       <td><input type="*text"></td>
+       <tr>
+        <td><label for="*Adress">*Adress</label></td>
+        <td><input type="text"></td>
+       
+       
+        <td><label for="*Email">*Email</label></td>
+        <td><input type="text"></td>
+       </tr>
+       <tr>
+        <td><label for="*Town/city">*Town city</label></td>
+        <td><input type="text"></td>
+       </tr>
+       <tr>
+         <td><label for="*Post code">*Post code</label></td>
+        <td><input type="text"></td>
+        
+       </tr>
+        </table>
+
+       <p align="center">* required fields </p>
+
+   <div class="t1">
+     <tr>
+        <td><h3>Topping</h3>
+            <label > <input type="radio" name="Topping" id="marg" value="marg">Margherita</label>
+            <label > <input type="radio" name="Topping" id="se"  value="four">Four seasons</label>
+                <label > <input type="radio" name="Topping" id="Meat" value="meat">Meat feast</label>
+        </td>
+    
+
+        <td>
+            <h3>Size</h3>
+            <label><input type="radio" name="Size" id="Small">Small</label>
+               <label><input type="radio" name="Size" id="Medium">Medium</label>
+                  <label><input type="radio" name="Size" id="Large">Large</label>
+        </td>
+    
+    
+        <td>
+            <h3>Extras</h3>
+            <label> <input type="checkbox" name="Extras" id="Mush">Mushrooms</label>
+            <label> <input type="checkbox" name="Extras" id="Mush">Green Peppers</label>
+            <label> <input type="checkbox" name="Extras" id="Mush">Anchovies</label>
+            <label> <input type="checkbox" name="Extras" id="Mush">Extras Cheese</label>
+        </td>
+    </tr>
+   </div>
+   
+    </table>
+    <table>
+    <tr>
+    <td>
+       preferred delivery time: <input type="time" min="11:00" max="21:00"  step="900" name="del" id="del" required>
+    </td>
+    <tr>
+        <td>
+            <label style="text-align: right;">Delivery instructions </label>
+        
+    
+        <textarea name="instr" id="instr"></textarea>
+    </td>
+    </tr>
+    <td colspan="2" style="text-align: center;" ><br><button>sublit orderd</button></td>
+    
+    </tr>
+
+    </table>
+
+    
+</form>
+</div>
+</body>
+</html>
