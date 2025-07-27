@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-Classes and Pseudo-Elements</title>
+  <style>
+
+     body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+ 
+    a:link {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: green;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: red;
+    }
+
+   
+    p::first-line {
+      font-weight: bold;
+      color: rgb(20, 20, 243);
+    }
+
+ 
+    h2::before {
+      content: "★ ";
+      color: gold;
+    }
+
+    h1::before {
+      content: "✦ ";
+      color: orange;
+    }
+
+   
+  </style>
+</head>
+<body>
+
+  <h1>Main Heading</h1>
+  <h2>Sub Heading</h2>
+
+  <p>
+    This is a paragraph demonstrating the use of pseudo-elements like ::first-line. It helps in targeting only the first line of text for styling, no matter how long the paragraph is.
+  </p>
+
+  <h2>Useful Links</h2>
+  <ul>
+    <li><a href="https://example.com">Example Link 1</a></li>
+    <li><a href="https://google.com">Example Link 2</a></li>
+    <li><a href="https://wikipedia.org">Example Link 3</a></li>
+  </ul>
+
+</body>
+</html>

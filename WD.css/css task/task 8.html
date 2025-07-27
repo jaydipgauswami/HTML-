@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Register UI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+ <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #2e7d32, #9acd32);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.left-box {
+  background-color: #004d5a;
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+   border-top-right-radius: 150px;
+    
+}
+
+.left-box h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.left-box p {
+  margin-bottom: 25px;
+}
+
+.sign-in-btn {
+  padding: 10px 30px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 1s;
+}
+.sign-in-btn:hover{
+    background-color: #c1bd00;
+}
+
+.right-box {
+  flex: 1.2;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.right-box h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icons button {
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 1s;
+}
+.social-icons button:hover{
+    background-color: #004d5a;
+}
+
+.or {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.form-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+form input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.sign-up-btn {
+  padding: 10px 30px;
+  background-color: #30302c;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.sign-up-btn:hover{
+  background-color: #c1bd00;
+}
+ </style>
+</head>
+<body>
+  <div class="container">
+
+
+    <div class="left-box">
+      <h2>Welcome Back!</h2>
+      <p>Provide your personal details to use all features</p>
+      <button class="sign-in-btn">Sign In</button>
+    </div>
+
+
+    <div class="right-box">
+      <h2>Register With</h2>
+
+      <div class="social-icons">
+       <button><i class="fab fa-google"></i></button>
+<button><i class="fab fa-facebook-f"></i></button>
+<button><i class="fab fa-github"></i></button>
+<button><i class="fab fa-linkedin-in"></i></button>
+
+      </div>
+
+      <h3 class="or">OR</h3>
+      <p class="form-text">Fill Out The Following Info For Registration</p>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="sign-up-btn">SIGN UP</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

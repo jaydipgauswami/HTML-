@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+            
+        }
+
+        .row {
+            display: flex;
+            gap: 50px;
+          flex-wrap: nowrap;
+        }
+
+        .col {
+            height: 500px;
+            width: 300px;
+            /* border: 2px solid; */
+            /* background-color: darkgoldenrod; */
+            position: relative;
+            box-shadow: 5px 10px 18px #888888;
+            ;
+        }
+
+        .img {
+            height: 500px;
+            width: 300px;
+            position: relative;
+        }
+
+        .font {
+            height: inherit;
+            width: inherit;
+            /* background-color: darkgreen; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY(0deg);
+            transition: 1s;
+            backface-visibility: hidden;
+
+
+        }
+
+        .back {
+            height: inherit;
+            width: inherit;
+            /* background-color: darkcyan; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY(180deg);
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+
+        .col:hover .font {
+            transform: rotateY(180deg);
+
+
+        }
+
+        .col:hover .back {
+            transform: rotateY(0deg);
+
+        }
+
+        .view {
+
+            width: 93%;
+            /* height: inherit; */
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .col:hover .view {
+            top: 280px;
+            opacity: 1;
+        }
+
+        .view:hover {
+            background-color: darkcyan;
+        }
+
+        .info {
+            position: absolute;
+            top: 320px;
+            left: 70px;
+
+        }
+
+
+
+        .info p:nth-child(2) {
+            background-color: darkgrey;
+            padding: 9px;
+        }
+
+        .info p:first-child {
+            color: red;
+            font-size: 20px;
+        }
+
+        .info button {
+            color: white;
+            padding: 5px;
+            /* margin-left: 20px; */
+          background-color: black;
+            width: 100%;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            transition: 1s;
+        }
+
+        button:hover {
+            background-color: darkcyan;
+            border: none;
+        }
+
+        del {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="img">
+
+                    <div class="font">
+                        <img src="https://nurimetin.github.io/eliteshoppy.github.io/images/m1.jpg" alt="" width="100%">
+
+
+
+                    </div>
+                    <div class="back">
+                        <img src="https://nurimetin.github.io/eliteshoppy.github.io/images/m1.jpg" alt="" width="100%">
+
+
+                    </div>
+                    <div class="view"> Quick view</div>
+
+                </div>
+
+
+                <div class="info">
+                    <p>Formal Blue Shirt</p>
+                    <p>$45.99 <del>$69.71</del></p>
+                    <button>Add to cart</button>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="img">
+
+                    <div class="font">
+                        <img src="https://nurimetin.github.io/eliteshoppy.github.io/images/m2.jpg" alt="" width="100%">
+
+
+
+                    </div>
+                    <div class="back">
+                        <img src="https://nurimetin.github.io/eliteshoppy.github.io/images/m2.jpg" alt="" width="100%">
+
+
+                    </div>
+                    <div class="view"> Quick view</div>
+
+                </div>
+
+
+                <div class="info">
+                    <p>Formal Blue Shirt</p>
+                    <p>$45.99 <del>$69.71</del></p>
+                    <button>Add to cart</button>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="img">
+
+                    <div class="font">
+                        <img src="https://nurimetin.github.io/eliteshoppy.github.io/images/m3.jpg" alt="" width="100%">
+
+
+
+                    </div>
+                    <div class="back">
+                        <img src="https://nurimetin.github.io/eliteshoppy.github.io/images/m3.jpg" alt="" width="100%">
+
+
+                    </div>
+                    <div class="view"> Quick view</div>
+
+                </div>
+
+
+                <div class="info">
+                    <p>Formal Blue Shirt</p>
+                    <p>$45.99 <del>$69.71</del></p>
+                    <button>Add to cart</button>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="img">
+
+                    <div class="font">
+                        <img src="https://nurimetin.github.io/eliteshoppy.github.io/images/m4.jpg" alt="" width="100%">
+
+
+
+                    </div>
+                    <div class="back">
+                        <img src="https://nurimetin.github.io/eliteshoppy.github.io/images/m4.jpg" alt="" width="100%">
+
+
+                    </div>
+                    <div class="view"> Quick view</div>
+
+                </div>
+
+
+                <div class="info">
+                    <p>Formal Blue Shirt</p>
+                    <p>$45.99 <del>$69.71</del></p>
+                    <button>Add to cart</button>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotate Back Div</title>
+  <style>
+    .container {
+      position: relative;
+      /* background-color: darkblue; */
+      height: 300px;
+      width: 200px;
+      margin: 100px auto;
+      /* border: 10px solid; */
+      overflow: hidden;
+    }
+
+    .font-div{
+      height: 280px;
+      width: 180px;
+      background-color: black;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      z-index: 0;
+
+
+    }
+    .back-div{
+      height: 550px;
+      width: 550px;
+
+      background:linear-gradient(red,blue,purple,yellow);
+   
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      z-index: -1;
+
+      
+    }
+    .container:hover .back-div{
+      transform:translate(-50%,-50%) rotate(360deg);
+      transition: 1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="font-div"></div>
+    <div class="back-div"></div>
+  </div>
+</body>
+</html>

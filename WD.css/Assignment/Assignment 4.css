@@ -1,0 +1,35 @@
+
+.ol {
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+.ol li::before {
+  content: "🔹 "; 
+  color: rgb(69, 69, 168);
+  font-size: 20px;
+}
+
+.ol li {
+  color: darkgreen;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+
+.ul {
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+.ul li::before {
+  content: "✔️ ";
+  color: navy;
+  font-size: 20px;
+}
+
+.ul li {
+  color: maroon;
+  font-weight: bold;
+  margin-bottom: 8px;
+}

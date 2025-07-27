@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Cards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+ <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #b9cec9cb;
+  margin: 0;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:5px 5px 5px 3px rgba(0,0,0,.5);
+  text-align: center;
+}
+
+.card img {
+  width: 200px;
+  height: 200px; 
+  margin-bottom: 10px;
+  
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.card h3 {
+  color: #333;
+}
+
+.stars {
+  color: gold;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button.blue:hover{
+    background-color:  #742a2a;
+}
+button.orange:hover{
+    background-color:  #742a2a;
+}
+button.black:hover{
+    background-color:  #742a2a;
+}
+
+
+button.blue {
+  background-color: #007bff;
+  transition: .3s;
+}
+
+button.orange {
+  background-color: #ff6600;
+  transition: .3s;
+
+}
+
+button.black {
+  background-color: #000;
+  transition: .3s;
+
+}
+
+ </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8nvROr6yeO8-Rl6y3BXHQlbVPXrQ0A4Tcw&s" alt="Shoe" />
+      <h2>Shoes</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat.</p>
+      <h3>$60.00</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <button class="blue">Shop Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJ99dPqWuFwFlxPTgyoKqqZLMbdz6wiXRog&s" alt="Headset" />
+      <h2>Headset</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat.</p>
+      <h3>$40.00</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <button class="orange">Shop Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEP3MfGRODXfwIbGxZWeatpar3v5yAgQHatg&s" alt="Watch" />
+      <h2>Watch</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat.</p>
+      <h3>$100.00</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <button class="black">Shop Now</button>
+    </div>
+  </div>
+</body>
+</html>

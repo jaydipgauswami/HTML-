@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Variables Example</title>
+  <style>
+   
+    :root {
+      --primary-color: #a5af4c;
+      --secondary-color: #f0f0f0;
+      --text-color: #333;
+      --border-color: #ccc;
+    }
+
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    header, footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    .content-box {
+      border: 2px solid var(--border-color);
+      padding: 20px;
+      margin-top: 20px;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <main>
+    <h2>Welcome!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem porro temporibus, maxime ullam debitis eum aliquam error mollitia deleniti beatae ipsa odit neque et optio necessitatibus dolorem eius eos.</p>
+    <div class="content-box">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio vero voluptatum doloremque nemo sit. Deserunt, aspernatur rerum officia rem ipsa minima pariatur enim unde, laborum quasi possimus voluptates. Eos, porro!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>

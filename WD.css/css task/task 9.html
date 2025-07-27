@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+ <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #e8f0f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  width: 700px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-box {
+  background: #00a859;
+  color: white;
+  width: 100%;
+  padding:30px;
+  clip-path: polygon(0 0, 100% 0, 0% 100%, 0% 100%);
+}
+
+.left-box h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.left-box p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  transition: .5s ease;
+}
+.signup-btn:hover{
+    background-color: darkcyan;
+}
+.right-box {
+  padding: 50px 40px;
+  width: 100%;
+}
+
+.right-box h2 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+label span {
+  color: red;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-bottom: 20px;
+ 
+}
+
+.signin-btn {
+  padding: 10px;
+  background: transparent;
+  color: #0d0f0e;
+  border: 2px solid #00a859;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+.signin-btn:hover{
+    background-color: #00a859;
+}
+
+.forgot {
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  color: #00a859;
+  text-decoration: none;
+}
+
+ </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="left-box">
+      <h2>Welcome!</h2>
+      <p>Create your account.<br>For Free!</p>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+
+    <div class="right-box">
+      <h2>Login</h2>
+      <form>
+        <label>Username/Email address <span>*</span></label>
+        <input type="text" placeholder="Username or Email" required>
+
+        <label>Password <span>*</span></label>
+        <input type="password" placeholder="Password" required>
+
+        <button class="signin-btn">Sign In</button>
+        <a href="#" class="forgot">Forgot password?</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

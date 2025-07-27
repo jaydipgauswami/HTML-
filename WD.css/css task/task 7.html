@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: darkgray;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+           
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            height: 380px;
+            padding: 20px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        
+        }
+
+        .card .icon {
+
+            font-size: 30px;
+            height: 200px;
+            font-weight: bold;
+            color: white;
+            line-height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+            border-bottom-right-radius:120px ;
+
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .label {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: white;
+        }
+
+        .orange .icon {
+            background: linear-gradient(45deg, #ff6a00, #ee0979);
+
+        }
+
+        .purple .icon {
+            background: linear-gradient(45deg, #7f00ff, #e100ff);
+        }
+
+        .blue .icon {
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+        }
+
+        .green .icon {
+            background: linear-gradient(45deg, #00c9ff, #92fe9d);
+        }
+
+        .code {
+            background: linear-gradient(45deg, #ff6a00, #ee0979);
+        }
+
+        .css3 {
+            background: linear-gradient(45deg, #7f00ff, #e100ff);
+        }
+
+        .html5 {
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+        }
+
+        .js {
+            background: linear-gradient(45deg, #00c9ff, #34b942);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+
+        <div class="card orange">
+            <div class="icon">&#60;/&#62;</div>
+            <h3>TITLE</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="label code">CODE</span>
+        </div>
+
+
+        <div class="card purple">
+            <div class="icon">CSS3</div>
+            <h3>TITLE</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="label css3">CSS3</span>
+        </div>
+
+
+        <div class="card blue">
+            <div class="icon">HTML5</div>
+            <h3>TITLE</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="label html5">HTML5</span>
+        </div>
+
+
+        <div class="card green">
+            <div class="icon">JS</div>
+            <h3>TITLE</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="label js">JS</span>
+        </div>
+    </div>
+</body>
+
+</html>

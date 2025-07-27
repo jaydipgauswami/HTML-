@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Cards</title>
+  <link rel="stylesheet" href="">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f1b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .heading {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    
+    .card-container {
+      display: flex;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      
+    }
+
+    .card {
+
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+     
+      
+    }
+
+    .content {
+      padding: 1.2rem;
+      text-align: left;
+    }
+
+    .content h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    .content p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading">RESPONSIVE CARDS</h1>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVBE7krmonr_-ntP-odp0M-nenpqCNiNwYzg&s"
+        alt="Las Vegas">
+      <div class="content">
+        <h2>Las Vegas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore quisquam illum natus minima placeat
+          sapiente.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8fDA%3D"
+        alt="New York">
+      <div class="content">
+        <h2>New York</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore quisquam illum natus minima placeat
+          sapiente.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.traveltrendstoday.in/wp-content/uploads/2024/11/shutterstock_1116483092-scaled.jpg"
+        alt="Singapore">
+      <div class="content">
+        <h2>Singapore</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore quisquam illum natus minima placeat
+          sapiente.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="footer">USING CSS GRID</h2>
+</body>
+
+</html>

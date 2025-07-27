@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url(https://images.pexels.com/photos/1590549/pexels-photo-1590549.jpeg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 800px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+       box-shadow:  5px 9px 20px #000 ;
+    }
+
+    .left {
+      width: 50%;
+     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7njt91TOzwjrf0dCeFfhoHWC86NXwDIYDlg&s) no-repeat center ;
+      background-size: cover;
+    }
+
+    .right {
+      width: 50%;
+      padding: 40px;
+    } 
+
+    .right h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      
+    }
+
+    .right h2::before{
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #00c853;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 5px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;  
+      margin: 10px ;
+      padding: 12px;
+      border: none;
+      background: #f1f1f1;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    form textarea {
+      height: 100px;
+    }
+
+    form button {
+      width: 100%;
+      padding: 12px;
+      background: #00c853;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    form button:hover {
+      background: #00b44b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Phone" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
